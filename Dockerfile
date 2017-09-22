@@ -1,4 +1,4 @@
-FROM centos
+FROM maven
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
 
