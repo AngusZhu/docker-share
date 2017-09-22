@@ -18,6 +18,6 @@ public class DockerDemoSpringBootApplication {
 
     @RequestMapping("/")
     public String hello(){
-        return String.format("Hello! Docker!,%s",  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:sss").format(new Date()));
+        return String.format("Hello! Docker!,%s",  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").format(new Date()));
     }
 }
